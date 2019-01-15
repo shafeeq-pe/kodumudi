@@ -33,7 +33,7 @@ const Icons = () => {
             <FontAwesomeIcon icon="mobile" />
           </div>
         </div>
-        <p>Digital Marketing</p>
+        <p>Game Designing</p>
       </div>
 
       <div className="IconAndText">
