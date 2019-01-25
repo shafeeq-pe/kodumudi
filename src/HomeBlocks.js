@@ -5,11 +5,12 @@ import logo2 from "./icons/logo.json";
 import "./css/HomeBlocks.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStroopwafel, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import { faMobile } from "@fortawesome/free-solid-svg-icons";
+import { faStroopwafel, faMobileAlt, faMobile, faNewspaper } from "@fortawesome/free-solid-svg-icons";
+
 library.add(faStroopwafel);
 library.add(faMobile);
 library.add(faMobileAlt);
+library.add(faNewspaper);
 
 const Icons = () => {
   const iconOne = {
@@ -30,10 +31,10 @@ const Icons = () => {
       <div className="IconAndText">
         <div className="BlockIcon">
           <div className="FaIcon">
-            <FontAwesomeIcon icon="mobile" />
+            <FontAwesomeIcon icon="faNewspaper" />
           </div>
         </div>
-        <p>Game Designing</p>
+        <p>News</p>
       </div>
 
       <div className="IconAndText">
@@ -42,21 +43,21 @@ const Icons = () => {
             <FontAwesomeIcon icon="stroopwafel" />
           </div>
         </div>
-        <p>SEO </p>
+        <p>Members </p>
       </div>
 
       <div className="IconAndText">
         <div className="BlockIcon">
           <ReactBodymovin options={iconOne} />
         </div>
-        <p>Mobile Apps</p>
+        <p>Contacts</p>
       </div>
 
       <div className="IconAndText">
         <div className="BlockIcon">
           <ReactBodymovin options={iconOne} />
         </div>
-        <p>Web Apps </p>
+        <p>BloodBanks</p>
       </div>
 
       <div className="IconAndText">
