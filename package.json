@@ -10,7 +10,9 @@
     "react-bodymovin": "^2.0.0",
     "react-dom": "^16.6.0",
     "react-navigation": "^2.18.2",
-    "react-scripts": "2.0.5"
+    "react-responsive-carousel": "^3.1.46",
+    "react-scripts": "2.0.5",
+    "react-whirligig": "^6.5.11"
   },
   "scripts": {
     "start": "react-scripts start",
