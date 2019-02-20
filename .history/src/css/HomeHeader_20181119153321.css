@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 45px;
+  font-size: calc(5px + 2vmin);
+}
+
+.home-header {
+  background: #ed2050; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ed2050,
+    #e65900
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ed2050,
+    #e65900
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 35vmin;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: left;
+  color: white;
+  padding: 3vmin 3vmin;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.App-header-title {
+  font-size: calc(5px + 2vmin);
+  margin-left: auto;
+}
