@@ -8,7 +8,7 @@ import RestoreIcon from "@material-ui/icons/Restore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import orange from "@material-ui/core/colors/purple";
+import orange from "@material-ui/core/colors/orange";
 const styles = {
   root: {
     width: "100%",
@@ -18,7 +18,7 @@ const styles = {
 const theme = createMuiTheme({
   palette: {
     primary: { main: orange[500] }, // Purple and green play nicely together.
-    secondary: { main: "#11cb5f" } // This is just green.A700 as hex.
+    secondary: { main: "#ef6c00" } // This is just green.A700 as hex.
   },
   typography: { useNextVariants: true }
 });

@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./css/index.css";
-import App from "./components/HomeHeader";
-import Icons from "./components/HomeBlocks";
-import SimpleBottomNavigation from "./components/bottomNav";
+import "../css/index.css";
+import App from "../components/HomeHeader";
+import Icons from "../components/HomeBlocks";
+import SimpleBottomNavigation from "../components/bottomNav";
 // import Slider from "./HomeSlider";
-import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "../serviceWorker";
 ReactDOM.render(<App />, document.getElementById("HomeHeader"));
 ReactDOM.render(<Icons />, document.getElementById("HomeBlocks"));
 ReactDOM.render(
