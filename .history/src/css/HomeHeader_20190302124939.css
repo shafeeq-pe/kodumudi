@@ -8,7 +8,7 @@
 }
 
 .home-header {
-  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   min-height: 35vmin;
   display: flex;
   flex-direction: row;
