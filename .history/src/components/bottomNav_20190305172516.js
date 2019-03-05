@@ -17,7 +17,7 @@ const styles = {
 };
 const theme = createMuiTheme({
   palette: {
-    primary: { main: red["A400"] }, // Purple and green play nicely together.
+    primary: { main: red[A400] }, // Purple and green play nicely together.
     secondary: { main: "#F50057" } // This is just green.A700 as hex.
   },
   typography: { useNextVariants: true }
