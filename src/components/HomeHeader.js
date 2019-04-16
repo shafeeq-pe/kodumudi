@@ -10,6 +10,7 @@ class HomeHeader extends Component {
         <header className="home-header">
           <h1 className="App-logo">XPERTCUBE REACT WEBSITE</h1>
           <h2 className="App-header-title">HOME</h2>
+          <p>32</p>
         </header>
       </div>
     );
