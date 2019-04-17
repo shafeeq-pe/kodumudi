@@ -4,6 +4,7 @@ import "./css/index.css";
 import HomeHeader from "./components/HomeHeader";
 import Icons from "./components/HomeBlocks";
 import SimpleBottomNavigation from "./components/bottomNav";
+import HomeSlider from "./components/HomeSlider";
 // import Slider from "./HomeSlider";
 import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(<HomeHeader />, document.getElementById("HomeHeader"));
@@ -12,7 +13,7 @@ ReactDOM.render(
   <SimpleBottomNavigation />,
   document.getElementById("BottomNav")
 );
-// ReactDOM.render(<Slider />, document.getElementById("HomeSlider"));
+ReactDOM.render(<HomeSlider />, document.getElementById("HomeSlider"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

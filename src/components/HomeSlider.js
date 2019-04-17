@@ -1,79 +1,30 @@
 import React from "react";
-import ReactBodymovin from "react-bodymovin";
-import logo from "./icons/blood.json";
-import logo2 from "./icons/logo.json";
-import "./css/HomeBlocks.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStroopwafel, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import { faMobile } from "@fortawesome/free-solid-svg-icons";
-library.add(faStroopwafel);
-library.add(faMobile);
-library.add(faMobileAlt);
-
-const Slider = () => {
-    const iconOne = {
-        loop: false,
-        autoplay: true,
-        prerender: true,
-        animationData: logo
-    };
-    const iconTwo = {
-        loop: true,
-        autoplay: true,
-        prerender: true,
-        animationData: logo2
-    };
-
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import "../css/HomeSlider.css";
+class HomeSlider extends React.Component {
+  render() {
     return (
-        <div className="HomeBlocks">
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <div className="FaIcon">
-                        <FontAwesomeIcon icon="mobile" />
-                    </div>
-                </div>
-                <p>Game Designing</p>
-            </div>
-
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <div className="FaIcon">
-                        <FontAwesomeIcon icon="stroopwafel" />
-                    </div>
-                </div>
-                <p>SEO </p>
-            </div>
-
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <ReactBodymovin options={iconOne} />
-                </div>
-                <p>Mobile Apps</p>
-            </div>
-
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <ReactBodymovin options={iconOne} />
-                </div>
-                <p>Web Apps </p>
-            </div>
-
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <ReactBodymovin options={iconTwo} />
-                </div>
-                <p>Mobile Apps</p>
-            </div>
-
-            <div className="IconAndText">
-                <div className="BlockIcon">
-                    <ReactBodymovin options={iconOne} />
-                </div>
-                <p>Web Apps </p>
-            </div>
-        </div>
+      <CarouselProvider
+        naturalSlideWidth={90}
+        naturalSlideHeight={50}
+        totalSlides={7}
+        className="SlideContainer"
+      >        
+        <Slider >
+          <Slide index={0} className="Slide">I am the first Slide.</Slide>
+          <Slide index={1} className="Slide">I am the second Slide.</Slide>
+          <Slide index={2} className="Slide">I am the third Slide.</Slide>
+          <Slide index={3} className="Slide">I am the second Slide.</Slide>
+          <Slide index={4} className="Slide">I am the third Slide.</Slide>
+          <Slide index={5} className="Slide">I am the second Slide.</Slide>
+          <Slide index={6} className="Slide">I am the third Slide.</Slide>
+        </Slider>
+        <ButtonBack>Back</ButtonBack>
+        <ButtonNext>Next</ButtonNext>
+      </CarouselProvider>
     );
-};
-
-export default Slider;
+  }
+}
+  export default HomeSlider;
+  
