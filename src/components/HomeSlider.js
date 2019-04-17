@@ -9,6 +9,9 @@ class HomeSlider extends React.Component {
         naturalSlideWidth={90}
         naturalSlideHeight={50}
         totalSlides={7}
+        interval={5000}
+        isPlaying={true}
+        visibleSlides={3}
         className="SlideContainer"
       >        
         <Slider >

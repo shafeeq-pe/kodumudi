@@ -2,7 +2,19 @@
     /* margin-bottom: 215px; */
 }
 .Slide{
-    background: red;
     color: #fff;
-    /* margin: 10px ; */
+    margin: 10px ;
+}
+.Slide:nth-child(1){
+    background:green;
+}
+.Slide:nth-child(2){
+    background:pink;
+}
+
+.Slide:nth-child(3){
+    background:red;
+}
+.Slide:nth-child(4){
+    background:brown;
 }
