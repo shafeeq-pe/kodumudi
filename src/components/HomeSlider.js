@@ -11,7 +11,7 @@ class HomeSlider extends React.Component {
         totalSlides={7}
         interval={5000}
         isPlaying={true}
-        visibleSlides={3}
+        visibleSlides={1.2}
         className="SlideContainer"
       >        
         <Slider >
@@ -23,8 +23,7 @@ class HomeSlider extends React.Component {
           <Slide index={5} className="Slide">I am the second Slide.</Slide>
           <Slide index={6} className="Slide">I am the third Slide.</Slide>
         </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+     
       </CarouselProvider>
     );
   }
