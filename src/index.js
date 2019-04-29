@@ -14,6 +14,9 @@ ReactDOM.render(
   <SimpleBottomNavigation />,
   document.getElementById("BottomNav")
 );
+
+
+
 ReactDOM.render(<HomeSlider />, document.getElementById("HomeSlider"));
 ReactDOM.render(<ProfileCard />, document.getElementById("ProfileCard"));
 // If you want your app to work offline and load faster, you can change
