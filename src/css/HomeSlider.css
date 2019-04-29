@@ -6,6 +6,12 @@
     margin: 5px ;
     width: calc(14.2857% - 20px) !important;
 }
+.Slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .Slide:nth-child(1){
     background:green;
 }
