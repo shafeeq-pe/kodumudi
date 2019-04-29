@@ -4,9 +4,8 @@ import { withStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Icon from "@material-ui/core/Icon";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+// import FavoriteIcon from "@material-ui/icons/Favorite";
+import HomeIcon from "@material-ui/icons/Home";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import red from "@material-ui/core/colors/red";
 const styles = {
@@ -25,7 +24,7 @@ const theme = createMuiTheme({
 
 class LabelBottomNavigation extends React.Component {
   state = {
-    value: "recents"
+    value: "home"
   };
 
   handleChange = (event, value) => {
@@ -44,24 +43,29 @@ class LabelBottomNavigation extends React.Component {
           className={classes.root}
         >
           <BottomNavigationAction
-            label="Recents"
-            value="recents"
-            icon={<RestoreIcon />}
+            label="Home"
+            value="home"
+            icon={<HomeIcon />}
+          />
+           <BottomNavigationAction
+            label="Gallery"
+            value="gallery"
+            icon={<Icon>collections</Icon>}
           />
           <BottomNavigationAction
-            label="Favorites"
-            value="favorites"
-            icon={<FavoriteIcon />}
+            label="Members"
+            value="members"
+            icon={<Icon>portrait</Icon>}
+          />
+              <BottomNavigationAction
+            label="Blog"
+            value="blog"
+            icon={<Icon>favorite</Icon>}
           />
           <BottomNavigationAction
-            label="Nearby"
-            value="nearby"
-            icon={<LocationOnIcon />}
-          />
-          <BottomNavigationAction
-            label="Folder"
-            value="folder"
-            icon={<Icon>folder</Icon>}
+            label="More"
+            value="more"
+            icon={<Icon>more_horiz</Icon>}
           />
         </BottomNavigation>
       </MuiThemeProvider>
